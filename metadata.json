@@ -1,0 +1,6 @@
+{
+  "name": "Trình Viết Truyện Dài AI",
+  "description": "Ứng dụng AI chuyên nghiệp viết truyện dài tự động với bộ nhớ nhân vật, dàn ý, kiểm tra logic, học văn phong và xuất file.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

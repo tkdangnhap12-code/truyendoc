@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+  .font-book {
+    font-family: 'Lora', 'Literata', 'EB Garamond', 'Merriweather', Georgia, Cambria, 'Times New Roman', serif;
+  }
+  .font-book-garamond {
+    font-family: 'EB Garamond', 'Lora', Georgia, serif;
+  }
+  .font-book-merriweather {
+    font-family: 'Merriweather', Georgia, serif;
+  }
+  .font-book-literata {
+    font-family: 'Literata', 'Lora', serif;
+  }
+}
+
+@layer base {
+  :root:not(.dark), .light {
+    --bg-page: #F5EFE6;
+    --bg-card: #FAF5EA;
+    --bg-paper: #FCF9F2;
+    --border-color: #E2D8C8;
+    --text-main: #2C2825;
+    --text-muted: #6E665C;
+  }
+
+  body {
+    font-family: 'Lora', 'Literata', 'EB Garamond', 'Merriweather', Georgia, sans-serif;
+    @apply transition-colors duration-200;
+  }
+
+  /* Warm book-paper theme for light mode */
+  :root:not(.dark), .light {
+    background-color: #F5EFE6;
+    color: #2C2825;
+  }
+
+  :root:not(.dark) .bg-white,
+  .light .bg-white {
+    background-color: #FAF5EA;
+  }
+
+  :root:not(.dark) .bg-slate-50,
+  .light .bg-slate-50 {
+    background-color: #F4EFE6;
+  }
+
+  :root:not(.dark) .bg-slate-100,
+  .light .bg-slate-100 {
+    background-color: #EFE8DA;
+  }
+
+  :root:not(.dark) .border-slate-200,
+  .light .border-slate-200 {
+    border-color: #E2D8C8;
+  }
+
+  :root:not(.dark) .text-slate-900,
+  .light .text-slate-900 {
+    color: #2C2825;
+  }
+
+  :root:not(.dark) .text-slate-800,
+  .light .text-slate-800 {
+    color: #38332F;
+  }
+
+  :root:not(.dark) .text-slate-700,
+  .light .text-slate-700 {
+    color: #48423D;
+  }
+
+  :root:not(.dark) .text-slate-600,
+  .light .text-slate-600 {
+    color: #5C544E;
+  }
+
+  :root:not(.dark) .text-slate-500,
+  .light .text-slate-500 {
+    color: #736B63;
+  }
+}
+
+
